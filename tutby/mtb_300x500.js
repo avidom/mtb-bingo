@@ -805,14 +805,14 @@ p.nominalBounds = new cjs.Rectangle(-91.9,-23.3,183.8,46.6);
 (lib.cursor = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
-	// Layer 1 copy
+	// hand cursors
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FCFCFC").s().p("AgwCdIAAgHQAAgLgFgQQgFgPgFgIIgxhaQgEgFAAgGQAAgPAOgJQAHgDAGAAQAQAAAHANIALAPIAAiBQAAgLAIgIQAIgIALAAQALAAAIAIQAIAIAAALIAAA4QAEgEAHAAQATAAAGASQAGgFAJABQAJAAAHAFQAIAGACAJQAGgEAIAAQALAAAIAIQAIAIAAALIAABHQAAAVgOAhQgOAfAAAOIAAAHg");
+	this.shape.graphics.f("#FCFCFC").s().p("AgiCPQgDgYgOgaIgxhZQgCgDAAgCQAAgHAHgEQACgCAEAAQAIAAAEAGIAkA1IAAiuQAAgFAEgEQAEgEAFAAQAFAAAEAEQAEAEAAAFIAAB3IAOAAIAAgnQAAgGACgEQADgEAGAAQAFAAAEAEQAEAEAAAGIAAAnIAOAAIAAgbQAAgEAEgFQAEgDAFAAQAFAAAEADQAEAEAAAFIAAAnIAOAAIAAgWQAAgFAEgEQAEgEAFAAQAFAAAEAEQAEADAAAGIAABGQAAARgMAdQgNAggCAPg");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-11.7,-15.7,23.5,31.5);
+p.nominalBounds = new cjs.Rectangle(-10.3,-14.3,20.7,28.7);
 
 
 (lib.blk = function(mode,startPosition,loop) {

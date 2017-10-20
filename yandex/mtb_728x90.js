@@ -1170,7 +1170,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.sh).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-126.7,-162.6,437.8,228.6);
+p.nominalBounds = new cjs.Rectangle(-126.7,-162.6,474.8,228.6);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop) {
@@ -1820,7 +1820,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// sroki
 	this.sroki = new lib.Symbol74();
 	this.sroki.setTransform(299,61);
-	this.sroki.alpha = 0.602;
+	this.sroki.alpha = 0.898;
 
 	this.timeline.addTween(cjs.Tween.get(this.sroki).wait(1));
 
@@ -1880,11 +1880,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  .to(r.bingo.mc1, 1.2, {y:"+=180", x:"-=180", alpha:0.0, rotation:"-=360", scaleX:0, scaleY:0, ease:Expo.easeInOut}, 3.0)
 		  .staggerTo([r.t1.t1, r.t1.t2, r.t1.t3], 0.4, {y:"-=180", /*y:0, scaleX:0, scaleY:0, */ease:Expo.easeIn}, 0.07, 3.3)
 		  .to(r.bingo, 1.2, {rotation:"+=360", ease:Expo.easeInOut}, 3.0)
-		  .to(r.bingo.c1, 1.2, {x:-213, y:-72, rotation:0, scaleX:1, scaleY:1, ease:Back.easeInOut}, 3.0)
-		  .to(r.bingo.c2, 1.2, {x:-104, y:-4, rotation:0, scaleX:1, scaleY:1, ease:Back.easeInOut}, 3.03)
-		  .to(r.bingo.c3, 1.2, {x:1, y:-72, rotation:0, scaleX:1, scaleY:1, ease:Back.easeInOut}, 3.06)
-		  .to(r.bingo.c4, 1.2, {x:109, y:-5, rotation:0, scaleX:1, scaleY:1, ease:Back.easeInOut}, 3.09)
-		  .to(r.bingo.c5, 1.2, {x:218, y:-74, rotation:0, scaleX:1, scaleY:1, ease:Back.easeInOut}, 3.12)
+		  .to(r.bingo.c1, 1.2, {x:198, y:-64, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.0)
+		  .to(r.bingo.c2, 1.2, {x:35, y:-24, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.03)
+		  .to(r.bingo.c3, 1.2, {x:-126, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.06)
+		  .to(r.bingo.c4, 1.2, {x:-290, y:-23, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.09)
+		  .to(r.bingo.c5, 1.2, {x:-457, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.12)
 		  
 		  .staggerTo([r.bingo.c1.btn, r.bingo.c2.btn, r.bingo.c3.btn, r.bingo.c4.btn, r.bingo.c5.btn], 0.1, {alpha:1, ease:Power0.easeNone}, 0.00, 3.7)
 		  .from(r.t2.t1, 1.0, {x:"+=100", alpha:0, ease:Expo.easeOut}, 3.7)
@@ -1975,14 +1975,14 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			//console.log("second part begins");
 			var tm = new TimelineMax();
 			tm.set(r.t3, {x:162, y:0})
-			  .set(r.t4, {x:162, y:0})
+			  .set(r.t4, {x:144, y:0})
 			  .set(r.scend, {y:-60})
-			  .set(r.term, {x:-68, y:16})
+			  .set(r.term, {x:-100, y:16})
 			  .staggerTo(cards, 0.4, {y:"-=350", ease:Expo.easeIn}, 0.05, 0.0)
 			  .staggerTo([r.pBar, r.t2.t2, r.t2.t1], 0.2, {y:"+=140", ease:Expo.easeIn}, 0.03, 0.0)
 			  .staggerTo([r.bingo.c1.btn, r.bingo.c2.btn, r.bingo.c3.btn, r.bingo.c4.btn, r.bingo.c5.btn], 0.1, {alpha:0, ease:Power0.easeNone}, 0.00, 0.0)
 			  .staggerTo([r.scend.bingo.c1.btn, r.scend.bingo.c2.btn, r.scend.bingo.c3.btn, r.scend.bingo.c4.btn, r.scend.bingo.c5.btn], 0.1, {alpha:0, ease:Power0.easeNone}, 0.00, 0.0)
-			  .to(cardChosen, 1.3, {x:237, y:-15, rotation:"+=360", ease:Back.easeInOut, overwrite:true}, 0.0)
+			  .to(cardChosen, 1.3, {x:237, y:-40, rotation:"+=360", ease:Back.easeInOut, overwrite:true}, 0.0)
 			  .staggerFrom([r.t3.t1, r.t3.t2], 1.0, {x:"+=200", alpha:0.0, ease:Expo.easeOut}, 0.07, 0.5)
 			  .from(r.term, 0.8, {x:"+=200", y:"+=800", rotation:"-=90", ease:Expo.easeOut}, 0.5)
 			  .to(r.wifi, 0.5, {alpha:1, ease:Power0.easeNone}, 1.3)
@@ -2117,7 +2117,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// wifi
 	this.wifi = new lib.Symbol59();
-	this.wifi.setTransform(10,-21.5,0.6,0.6);
+	this.wifi.setTransform(-56,1.5,0.6,0.6,-90);
 
 	this.timeline.addTween(cjs.Tween.get(this.wifi).wait(1));
 
@@ -2132,13 +2132,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// term
 	this.term = new lib.Symbol57();
-	this.term.setTransform(-68,16,0.4,0.4);
+	this.term.setTransform(-100,16,0.4,0.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.term).wait(1));
 
 	// t4
 	this.t4 = new lib.Symbol54copy();
-	this.t4.setTransform(162,0,0.6,0.6);
+	this.t4.setTransform(144,0,0.6,0.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.t4).wait(1));
 

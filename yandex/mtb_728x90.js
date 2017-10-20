@@ -1170,7 +1170,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.sh).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-126.7,-162.6,474.8,228.6);
+p.nominalBounds = new cjs.Rectangle(-473.7,-162.6,880.9,228.6);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop) {
@@ -1880,11 +1880,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  .to(r.bingo.mc1, 1.2, {y:"+=180", x:"-=180", alpha:0.0, rotation:"-=360", scaleX:0, scaleY:0, ease:Expo.easeInOut}, 3.0)
 		  .staggerTo([r.t1.t1, r.t1.t2, r.t1.t3], 0.4, {y:"-=180", /*y:0, scaleX:0, scaleY:0, */ease:Expo.easeIn}, 0.07, 3.3)
 		  .to(r.bingo, 1.2, {rotation:"+=360", ease:Expo.easeInOut}, 3.0)
-		  .to(r.bingo.c1, 1.2, {x:198, y:-64, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.0)
-		  .to(r.bingo.c2, 1.2, {x:35, y:-24, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.03)
-		  .to(r.bingo.c3, 1.2, {x:-126, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.06)
-		  .to(r.bingo.c4, 1.2, {x:-290, y:-23, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.09)
-		  .to(r.bingo.c5, 1.2, {x:-457, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.12)
+		  .to(r.bingo.c1, 1.2, {x:298, y:-64, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.0)
+		  .to(r.bingo.c2, 1.2, {x:135, y:-24, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.03)
+		  .to(r.bingo.c3, 1.2, {x:-26, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.06)
+		  .to(r.bingo.c4, 1.2, {x:-190, y:-23, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.09)
+		  .to(r.bingo.c5, 1.2, {x:-357, y:-62, rotation:0, scaleX:1.5, scaleY:1.5, ease:Back.easeInOut}, 3.12)
 		  
 		  .staggerTo([r.bingo.c1.btn, r.bingo.c2.btn, r.bingo.c3.btn, r.bingo.c4.btn, r.bingo.c5.btn], 0.1, {alpha:1, ease:Power0.easeNone}, 0.00, 3.7)
 		  .from(r.t2.t1, 1.0, {x:"+=100", alpha:0, ease:Expo.easeOut}, 3.7)
@@ -2032,7 +2032,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			//var cardChosen = r.bingo.c5;
 			TweenMax.staggerTo([r.t4.t3, r.t4.t2, r.t4.t1], 0.1, {y:"-=600"}, 0.0)
 			TweenMax.staggerTo([r.pBar, r.t2.t2, r.t2.t1], 0.1, {y:"-=140"}, 0.0)
-			TweenMax.set(r.cur, {rotation:0, x:80, y:24})
+			TweenMax.set(r.cur, {rotation:0, x:110, y:24})
 			TweenMax.set(r.term, {scaleX:0.4, scaleY:0.4})
 			TweenMax.set(r.term.bingo, {alpha:1})
 			TweenMax.set(r.term.price, {alpha:1})
@@ -2087,7 +2087,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// pBar
 	this.pBar = new lib.pBar();
-	this.pBar.setTransform(180.1,39,0.532,0.5);
+	this.pBar.setTransform(210.1,39,0.532,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.pBar).wait(1));
 
@@ -2099,13 +2099,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// t2
 	this.t2 = new lib.t2();
-	this.t2.setTransform(180.1,1.8,0.75,0.75);
+	this.t2.setTransform(210,1.8,0.75,0.75);
 
 	this.timeline.addTween(cjs.Tween.get(this.t2).wait(1));
 
 	// hand cursors
 	this.cur = new lib.cursor();
-	this.cur.setTransform(80,24);
+	this.cur.setTransform(110,24);
 
 	this.timeline.addTween(cjs.Tween.get(this.cur).wait(1));
 

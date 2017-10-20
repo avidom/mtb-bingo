@@ -19,7 +19,6 @@ lib.properties = {
 		{src:"images/card4.png", id:"card4"},
 		{src:"images/card5.png", id:"card5"},
 		{src:"images/cardGlow.png", id:"cardGlow"},
-		{src:"images/cardsShadow.png", id:"cardsShadow"},
 		{src:"images/comb.png", id:"comb"},
 		{src:"images/price.png", id:"price"},
 		{src:"images/ref.png", id:"ref"},
@@ -50,7 +49,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,230,111);
 (lib.car = function() {
 	this.initialize(img.car);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,261,126);
+p.nominalBounds = new cjs.Rectangle(0,0,365,178);
 
 
 (lib.card1 = function() {
@@ -89,16 +88,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,152,96);
 p.nominalBounds = new cjs.Rectangle(0,0,166,108);
 
 
-(lib.cardsShadow = function() {
-	this.initialize(img.cardsShadow);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,240,185);
-
-
 (lib.comb = function() {
 	this.initialize(img.comb);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,29,51);
+p.nominalBounds = new cjs.Rectangle(0,0,34,54);
 
 
 (lib.price = function() {
@@ -110,7 +103,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,116,54);
 (lib.ref = function() {
 	this.initialize(img.ref);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,34,86);
+p.nominalBounds = new cjs.Rectangle(0,0,73,189);
 
 
 (lib.sroki = function() {
@@ -122,7 +115,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,222,26);
 (lib.tv = function() {
 	this.initialize(img.tv);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,73,59);
+p.nominalBounds = new cjs.Rectangle(0,0,118,82);
 
 
 (lib.Symbol74 = function(mode,startPosition,loop) {
@@ -143,12 +136,12 @@ p.nominalBounds = new cjs.Rectangle(-111,-13,222,26);
 
 	// Layer 1
 	this.instance = new lib.tv();
-	this.instance.setTransform(-36,-29);
+	this.instance.setTransform(-59,-41);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-36,-29,73,59);
+p.nominalBounds = new cjs.Rectangle(-59,-41,118,82);
 
 
 (lib.Symbol72 = function(mode,startPosition,loop) {
@@ -156,12 +149,12 @@ p.nominalBounds = new cjs.Rectangle(-36,-29,73,59);
 
 	// Layer 2
 	this.instance = new lib.car();
-	this.instance.setTransform(-130,-63);
+	this.instance.setTransform(-177.5,-89);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-130,-63,261,126);
+p.nominalBounds = new cjs.Rectangle(-177.5,-89,365,178);
 
 
 (lib.Symbol71 = function(mode,startPosition,loop) {
@@ -169,12 +162,12 @@ p.nominalBounds = new cjs.Rectangle(-130,-63,261,126);
 
 	// Layer 1
 	this.instance = new lib.ref();
-	this.instance.setTransform(-17,-43);
+	this.instance.setTransform(-36,-94);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-17,-43,34,86);
+p.nominalBounds = new cjs.Rectangle(-36,-94,73,189);
 
 
 (lib.Symbol70 = function(mode,startPosition,loop) {
@@ -182,12 +175,12 @@ p.nominalBounds = new cjs.Rectangle(-17,-43,34,86);
 
 	// Layer 1
 	this.instance = new lib.comb();
-	this.instance.setTransform(-14,-25);
+	this.instance.setTransform(-17,-27);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-14,-25,29,51);
+p.nominalBounds = new cjs.Rectangle(-17,-27,34,54);
 
 
 (lib.Symbol66 = function(mode,startPosition,loop) {
@@ -658,19 +651,6 @@ p.nominalBounds = new cjs.Rectangle(-104.1,-13.1,208.3,26.3);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-5,-5,12.3,12.3);
-
-
-(lib.Symbol32 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer 1
-	this.instance = new lib.cardsShadow();
-	this.instance.setTransform(-120,-92);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-120,-92,240,185);
 
 
 (lib.Symbol26 = function(mode,startPosition,loop) {
@@ -1339,14 +1319,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	this.timeline.addTween(cjs.Tween.get(this.c5).wait(1));
 
-	// Layer 3
-	this.sh = new lib.Symbol32();
-	this.sh.setTransform(7,-66,1.05,1.05);
-
-	this.timeline.addTween(cjs.Tween.get(this.sh).wait(1));
-
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-126.7,-162.6,308.8,228.6);
+p.nominalBounds = new cjs.Rectangle(-126.7,-152.5,308.8,218.6);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop) {
@@ -2799,43 +2773,52 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// comb.png
 	this.comb = new lib.Symbol70();
-	this.comb.setTransform(-382,85);
+	this.comb.setTransform(-396,135);
 
+	this.timeline.addTween(cjs.Tween.get(this.comb).wait(1));
+
+	// ref.png
 	this.ref = new lib.Symbol71();
-	this.ref.setTransform(-413,63);
+	this.ref.setTransform(-446,66);
 
+	this.timeline.addTween(cjs.Tween.get(this.ref).wait(1));
+
+	// car.png
 	this.car = new lib.Symbol72();
-	this.car.setTransform(-289,61);
+	this.car.setTransform(-280,84);
 
+	this.timeline.addTween(cjs.Tween.get(this.car).wait(1));
+
+	// tv.png
 	this.tv = new lib.Symbol73();
-	this.tv.setTransform(-228,35);
+	this.tv.setTransform(-186,44);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.tv},{t:this.car},{t:this.ref},{t:this.comb}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.tv).wait(1));
 
 	// bingo
 	this.bingo = new lib.Symbol25();
-	this.bingo.setTransform(-0.7,98.4,0.916,0.916);
+	this.bingo.setTransform(49.3,98.4,0.916,0.916);
 
 	this.bigCircle = new lib.bigCircle();
-	this.bigCircle.setTransform(-2.2,59,1.008,1.008);
+	this.bigCircle.setTransform(47.8,59,1.008,1.008);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.bigCircle},{t:this.bingo}]}).wait(1));
 
 	// btn
 	this.btn = new lib.Symbol39();
-	this.btn.setTransform(300.1,63.5);
+	this.btn.setTransform(323.1,63.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.btn).wait(1));
 
 	// sroki
 	this.sroki = new lib.Symbol74();
-	this.sroki.setTransform(300,169);
+	this.sroki.setTransform(323,169);
 	this.sroki.alpha = 0.699;
 
 	this.timeline.addTween(cjs.Tween.get(this.sroki).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-430,-51.9,841,234);
+p.nominalBounds = new cjs.Rectangle(-482,-51.9,916,234);
 
 
 (lib.content = function(mode,startPosition,loop) {
@@ -2865,10 +2848,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  .staggerFrom([r.t1.t1, r.t1.t2, r.t1.t3], 1.5, {y:"+=20", alpha:0.0, ease:Elastic.easeOut}, 0.07, 1.3)
 		  .from(r.bingo.mc1, 0.9, {scaleX:0, scaleY:0, ease:Expo.easeOut}, 1.5)
 		  .staggerFrom([r.bingo.c1, r.bingo.c2, r.bingo.c3, r.bingo.c4, r.bingo.c5], 0.9, {scaleX:0, scaleY:0, ease:Expo.easeOut}, 0.08, 1.6)
-		  .from(r.bingo.sh, 1.4, {alpha:0, ease:Power0.easeNone}, 1.5)
 		  
 		  .to(r.bigCircle, 0.7, {scaleX:0, scaleY:0, rotation:"+=120", ease:Expo.easeIn}, 3.0)
-		  .to(r.bingo.sh, 0.4, {alpha:0, ease:Power0.easeNone}, 3.0)
 		  .to(r.bingo.mc1, 1.2, {y:"+=180", x:"-=180", alpha:0.0, rotation:"-=360", scaleX:0, scaleY:0, ease:Expo.easeInOut}, 3.0)
 		  .staggerTo([r.t1.t1, r.t1.t2, r.t1.t3], 0.4, {y:"-=180", /*y:0, scaleX:0, scaleY:0, */ease:Expo.easeIn}, 0.07, 3.3)
 		  .to(r.bingo, 1.2, {rotation:"+=360", ease:Expo.easeInOut}, 3.0)
@@ -2882,14 +2863,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  .from(r.t2.t1, 1.0, {x:"+=100", alpha:0, ease:Expo.easeOut}, 3.7)
 		  .from(r.t2.t2, 1.4, {x:"+=100", alpha:0, ease:Expo.easeOut}, 3.75)
 		  
-		  //.set(knop, {width:"0px"}, 4.3)
 		  .from(r.cur, 1.0, {scaleX:0, scaleY:0, y:"+=30", ease:Expo.easeOut}, 4.3)
 		  .from(r.pBar, 1.0, {y:"+=20", alpha:0, ease:Expo.easeOut}, 4.3)
 		  .from(r.pBar.mc2, 1.0, {scaleX:0, ease:Expo.easeInOut}, 4.3)
 		  .call(userReaction)
-		  
 		  ;
-		
 		
 		
 		function userReaction() {
@@ -2907,7 +2885,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			TweenLite.to(r.cur, 0.5, {x:"+=10", y:"+=20", rotation:"+=10", delay:4.5, ease:Sine.easeInOut})
 			TweenLite.to(r.cur, 0.5, {x:"-=10", y:"-=20", rotation:"-=10", delay:5.0, ease:Sine.easeInOut})
 			TweenLite.to(r.cur, 0.5, {x:"+=10", y:"+=20", rotation:"+=10", delay:5.5, ease:Sine.easeInOut})
-			
 			
 			TweenLite.to(r.pBar.mc, 6.0, {scaleX:1, ease:Power0.easeNone, onComplete:endPBar})
 			r.btnMain.addEventListener("rollover", hideCur);
@@ -2928,7 +2905,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		function hideCur() {
 			TweenLite.killTweensOf(r.cur);
 			TweenLite.to(r.cur, 0.4, {y:"+=250", rotation:"-=60", ease:Expo.easeIn})
-			//tlCur.pause();
 		}
 		
 		function card1FN() {
@@ -2973,12 +2949,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		function playMore() {
 			knop.style.width = "2000px";
 			TweenLite.set(r.btnMain, {scaleX:0})
-			//console.log(cardChosen);
 			TweenLite.killTweensOf(r.cur);
 			TweenLite.killTweensOf(r.pBar.mc);
 			TweenLite.to(r.cur, 0.4, {y:"+=250", rotation:"-=60", ease:Expo.easeIn});
 			r.btnMain.removeEventListener("rollover", hideCur);
-			//console.log("second part begins");
 			var tm = new TimelineLite();
 			tm.set(r.t3, {x:202, y:0})
 			  .set(r.t4, {x:140, y:0})
@@ -3010,7 +2984,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			  .to(r.wifi.w3, 0.2, {alpha:0, ease:Power0.easeNone}, 3.6)
 			  .to(r.wifi.w3, 0.2, {alpha:1, ease:Power0.easeNone}, 4.3)
 			  
-			  
 			  .staggerTo([r.t3.t1, r.t3.t2], 0.5, {y:0, scaleX:0, scaleY:0, ease:Back.easeIn}, 0.06, 3.0)
 			  .to(r.term, 1.2, {scaleX:1.3, scaleY:1.3, y:"+=34", ease:Expo.easeInOut}, 3.0)
 			  .to(r.wifi, 0.3, {alpha:0, ease:Power0.easeNone}, 3.0)
@@ -3027,33 +3000,25 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			  .from(r.scend.bigCircle, 1.9, {scaleX:0, scaleY:0, rotation:"+=120", ease:Expo.easeOut}, 6.0)
 			  .from(r.scend.bingo.mc1, 0.9, {scaleX:0, scaleY:0, ease:Expo.easeOut}, 6.5)
 			  .staggerFrom([r.scend.bingo.c1, r.scend.bingo.c2, r.scend.bingo.c3, r.scend.bingo.c4, r.scend.bingo.c5], 0.9, {scaleX:0, scaleY:0, ease:Expo.easeOut}, 0.08, 6.6)
-			  .from(r.scend.bingo.sh, 1.5, {alpha:0, ease:Power0.easeNone}, 7.0)
 			  
 			  .from(r.scend.tv, 0.9, {x:"+=300", alpha:0.0, ease:Expo.easeOut}, 6.5)
 			  .from(r.scend.car, 0.9, {x:"-=300", y:"-=100", scaleX:0.3, scaleY:0.3, alpha:0.0, ease:Expo.easeOut}, 6.7)
 			  .from(r.scend.comb, 0.9, {x:"-=300", alpha:0.0, ease:Expo.easeOut}, 6.8)
 			  .from(r.scend.ref, 0.9, {x:"-=300", alpha:0.0, ease:Expo.easeOut}, 6.9)
 			  
-			  //.staggerFrom([r.scend.sroki.t1, r.scend.sroki.t2, r.scend.sroki.t3], 0.9, {y:"+=150", alpha:0.0, ease:Expo.easeOut}, 0.07, 7.0)
 			  .from(r.scend.sroki, 0.9, {y:"+=150", alpha:0.0, ease:Expo.easeOut}, 7.0)
 			  
 			  .from(r.scend.btn, 1.4, {scaleX:0, scaleY:0, ease:Elastic.easeOut/*, onComplete:checkEnd*/}, 6.5)
 			  .to(r.scend.btn.mc, 0.2, {y:0, ease:Power0.easeNone}, 8.5)
 			  .to(r.scend.btn.mc, 0.2, {y:"-=5", ease:Power0.easeNone}, 9.0)
 			  
-			  //.call(setPause)
 			  .to(r.blk, 0.6, {alpha:1, ease:Power0.easeNone, onComplete:restart}, 11)
 			;
 			
 		}
 		
-		function setPause() {
-			//ty.pause();
-		}
 		
 		function restart() {
-			//var cards = [];
-			//var cardChosen = r.bingo.c5;
 			var tr = new TimelineLite();
 			tr.staggerTo([r.t4.t3, r.t4.t2, r.t4.t1], 0.1, {y:"-=600"}, 0.0)
 			tr.staggerTo([r.pBar, r.t2.t2, r.t2.t1], 0.1, {y:"-=140"}, 0.0)
@@ -3064,7 +3029,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			TweenLite.set(r.term.price, {alpha:1})
 			TweenLite.set(r.t3.t1, {y:-18, scaleX:1, scaleY:1})
 			TweenLite.set(r.t3.t2, {y:25, scaleX:1, scaleY:1})
-			//ty.play();
 			tl.play(0);
 			bgPattern();
 		}

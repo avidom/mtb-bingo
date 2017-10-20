@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://awaps.yandex.net/data/lib/adsdk.js">
+</script>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>mtb_728x90</title>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js"></script>
+<script src="mtb_728x90.js"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.mtb_728x90();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<script>
+function getUrlParam(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+  results = regex.exec(location.search);
+  return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body onload="init();" style="background-color:#FFFFFF;margin:0px;">
+		<a id="click1_area" href="#" target="_blank">
+		<div id="cont" style="position:absolute; z-index:99999; width:728px; height:90px; background-color: rgba(255, 0, 0, 0.0)"></div>
+	</a>
+
+	<canvas id="canvas" width="728" height="90" style="position:absolute; top:0px; background-color:#FFFFFF"></canvas>
+	<script>
+	document.getElementById("click1_area").href = getUrlParam('link1');
+	</script>
+</body>
+</html>
